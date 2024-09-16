@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Webxr Ar</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <!-- <script type="module" src="/cube/normal-cube.js"></script> -->
+    <!-- <script type="module" src="/cube/xr-cube.js"></script> -->
+    <!-- <script type="module" src="/cube/xr-hit-cube.js"></script> -->
+    <!-- <script type="module" src="/model/xr-hit-models.js"></script> -->
+    <script type="module" src="/model/xr-domOverlay.js"></script>
+
+    <div id="overlay-content">
+      <div id="container">
+        <label for="model-select">Choose Model</label>
+        <select id="model-select">
+          <option value="chair">Chair</option>
+          <option value="bookcase">Bookcase</option>
+        </select>
+      </div>
+      <div id="scanning-plane" style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; background: rgba(0, 0, 0, 0.5); color: white; display: flex; align-items: center; justify-content: center; font-size: 24px; font-family: Arial, sans-serif;">
+        Scanning for plane...
+    </div>
+    </div>
+    
+    <!-- Comment style display none for dom overlay to work in style.css file -->
+  </body>
+</html>
